@@ -22,6 +22,7 @@
          \/____/                          ~~                                                \/____/         
 ```
 <!-- Modified from art generated via patorjk.com/software/taag/ -->
+This code was written by Dr. Akiva Wernick and is provided under the Creative Commons Attribution-NonCommercial 4.0 International License. The code is provided as-is with no warranty or guarantee of performance. The user assumes all responsibility for the use of this code and any consequences that may arise from its use. Please see the LICENSE.md file for the user agreement and terms of use or visit https://creativecommons.org/licenses/by-nc/4.0/ for more information.
 
 # Elliptic Grid Smoothing
 The code provided in this package is an Elliptic Grid Smoothing algorithm designed to smooth 2D structured meshes by solving the 2D elliptic equations. A 2D NACA 2412 airfoil and a triangular geometry has been included for testing. The user can also read in their own 2D structured mesh in the standard 2D Plot3D (.xyz) binary file format. The smoothed mesh will then be exported in Plot3D format with the extension "_smoothed" after the geometry name and before the file extension.
