@@ -24,13 +24,27 @@
 <!-- Modified from art generated via patorjk.com/software/taag/ -->
 
 # Elliptic Grid Smoothing
-The code provided in this package is an Elliptic Grid Smoothing algorithm designed to smooth 2D CFD meshes by solving the 2D elliptic equations. A 2D NACA 2412 airfoil has been included for testing. The user can also read in their own 2D structured mesh in the Plot3D (.xyz) file format. The smoothed mesh will then be exported in Plot3D format with the extension "_smoothed" after the geometry name and before the file extension.
+The code provided in this package is an Elliptic Grid Smoothing algorithm designed to smooth 2D CFD meshes by solving the 2D elliptic equations. A 2D NACA 2412 airfoil and a triangular geometry has been included for testing. The user can also read in their own 2D structured mesh in the Plot3D (.xyz) file format. The smoothed mesh will then be exported in Plot3D format with the extension "_smoothed" after the geometry name and before the file extension.
 
 ## Package Contents
 - elliptic_solver.exe: Binary executable running the elliptic smoothing algorithm compiled for Windows 11
 - elliptic_smoothing.in: Example user input file
 - NACA_2412.xyz: 2D Plot3D NACA 2412 airfoil used as an example case to test
 - LICENSE: Text based license file containing the user agreement
+
+## Installation
+To install the code, simply download the package and extract the contents to the desired location on your computer. The code has been compiled for Windows 11 and should run on any Windows machine with the appropriate permissions.
+
+## Running the Code
+1. Open a command prompt and navigate to the directory where the code is located
+1. Create a text file named "elliptic_smoothing.in" in the same directory as the executable.
+   1. This file will contain the user-defined parameters for the elliptic smoothing algorithm.
+   1. Details are provided in the **User Input File** section below.
+   1. An example input file is provided in the package for reference.
+1. Make sure that the LICENSE.md file is located in the same directory as the executable.
+   1. If the LICENSE.md file is not present or has been altered, the code will not run and will return an error message.
+   1. Please see the LICENSE.md file for the user agreement and terms of use or visit https://creativecommons.org/licenses/by-nc/4.0/ for more information.
+1. Once the input file is ready, run the following command: ```.\S-BOS_elliptic_solver.exe```
 
 ## Capabilities
 Below are the capabilities of the code.
