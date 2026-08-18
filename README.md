@@ -24,26 +24,27 @@
 <!-- Modified from art generated via patorjk.com/software/taag/ -->
 
 # Elliptic Grid Smoothing
-The code provided in this package is an Elliptic Grid Smoothing algorithm designed to smooth 2D CFD meshes by solving the 2D elliptic equations. A 2D NACA 2412 airfoil and a triangular geometry has been included for testing. The user can also read in their own 2D structured mesh in the Plot3D (.xyz) file format. The smoothed mesh will then be exported in Plot3D format with the extension "_smoothed" after the geometry name and before the file extension.
+The code provided in this package is an Elliptic Grid Smoothing algorithm designed to smooth 2D structured meshes by solving the 2D elliptic equations. A 2D NACA 2412 airfoil and a triangular geometry has been included for testing. The user can also read in their own 2D structured mesh in the standard 2D Plot3D (.xyz) binary file format. The smoothed mesh will then be exported in Plot3D format with the extension "_smoothed" after the geometry name and before the file extension.
 
 ## Package Contents
-- elliptic_solver.exe: Binary executable running the elliptic smoothing algorithm compiled for Windows 11
-- elliptic_smoothing.in: Example user input file
-- NACA_2412.xyz: 2D Plot3D NACA 2412 airfoil used as an example case to test
-- LICENSE: Text based license file containing the user agreement
+- ***elliptic_solver.exe:*** Binary executable running the elliptic smoothing algorithm compiled for Windows 11
+- ***elliptic_smoothing.in:*** Example user input file
+- ***NACA_2412.xyz:*** 2D Plot3D NACA 2412 airfoil used as an example case to test
+- ***unit_triangle.xyz:*** 2D Plot3D triangular test geometry used as an example case to test the extremes of the code
+- ***LICENSE.md:*** Text based license file containing the user agreement
 
 ## Installation
 To install the code, simply download the package and extract the contents to the desired location on your computer. The code has been compiled for Windows 11 and should run on any Windows machine with the appropriate permissions.
 
 ## Running the Code
-1. Open a command prompt and navigate to the directory where the code is located
+1. Open a command prompt and navigate to the directory where the code is located.
 1. Create a text file named "elliptic_smoothing.in" in the same directory as the executable.
-   1. This file will contain the user-defined parameters for the elliptic smoothing algorithm.
-   1. Details are provided in the **User Input File** section below.
-   1. An example input file is provided in the package for reference.
+   - This file will contain the user-defined parameters for the elliptic smoothing algorithm.
+   - Details are provided in the **User Input File** section below.
+   - An example input file is provided in the package for reference.
 1. Make sure that the LICENSE.md file is located in the same directory as the executable.
-   1. If the LICENSE.md file is not present or has been altered, the code will not run and will return an error message.
-   1. Please see the LICENSE.md file for the user agreement and terms of use or visit https://creativecommons.org/licenses/by-nc/4.0/ for more information.
+   - If the LICENSE.md file is not present or has been altered, the code will not run and will return an error message.
+   - Please see the LICENSE.md file for the user agreement and terms of use or visit https://creativecommons.org/licenses/by-nc/4.0/ for more information.
 1. Once the input file is ready, run the following command: ```.\S-BOS_elliptic_solver.exe```
 
 ## Capabilities
@@ -53,8 +54,8 @@ Below are the capabilities of the code.
 - 2D Laplace Equations
 - 2D Poisson Equations
   - Thomas-Middlecoff Source Terms: Attempt to maintain initial mesh nodal distribution
-	- Steger-Sorenson Source Terms: Attempt to force boundary orthogonality while maintaining initial mesh boundary spacing
-	- Hybrid Source Terms: Merges the Thomas-Middlecoff and Steger-Sorenson source term calculations
+  - Steger-Sorenson Source Terms: Attempt to force boundary orthogonality while maintaining initial mesh boundary spacing
+  - Hybrid Source Terms: Merges the Thomas-Middlecoff and Steger-Sorenson source term calculations
 
 ### Geometry Capabilities
 - Plot3D (.xyz) Mesh: Can read any 2D mesh written in the standard Plot3D binary format
@@ -79,7 +80,7 @@ The user input file is a text-based file that must be labeled "elliptic_smoothin
 ***max_smoothing_iterations (integer):*** Max number of iterations to run the smoothing algorithm on the meth.  
 ***max_solver_iterations (integer):*** Max number of iterations to run the system of equations solver on the elliptic equations.  
 ***convergence_tolerance (decimal):*** The solver residual convergence tolerance  
-***iterations_with_reduced_stencil (integer):*** Number of iterations using a reduced 5-point stencil instead of a 7-point stencil to help with the solver convergence.  
+***iterations_with_reduced_stencil (integer):*** Number of iterations using a reduced 5-point stencil instead of a 9-point stencil to help with the solver convergence.  
 ***solver_relaxation (decimal):*** Solver relaxation factor for updating the mesh coordinates between smoothing iterations.  
 ***ilut_p_largest_terms (integer):*** The number of largest terms to accept for the ILUT preconditioner matrix.  
 ***ilut_threshold (decimal):*** The solver threshold for the ILUT preconditioner matrix.  
@@ -89,7 +90,7 @@ The user input file is a text-based file that must be labeled "elliptic_smoothin
 ***iterations_ss_reduced_influence (integer):*** Number of iterations to reduce the influence of the Steger-Sorenson source terms.  
 ***use_projectiong_for_spacing (True/False):*** If True, uses the projected distance. If False, uses the distance between the boundary node and its neighboring interior node. See **Steger-Sorenson Distance Calculations** for additional details.  
 ***interpolation_damping_coefficient (decimal):*** Damping coefficient used for the interpolation of the source terms from the bounbdary to the internal nodes.  
-***sharp_angle_threshold (decimal):*** The threshold in degrees to determine if the angle associated with a boundary node is considered sharp.  
+***sharp_angle_threshold (decimal):*** The threshold in degrees to determine if the angle associated with a boundary node is considered sharp. Any angle less than this threshold will be considered sharp and the Steger-Sorenson source terms will be turned off for that node.  
 
 ### Example User Input File
 #### NACA 2412 Airfoil Example
