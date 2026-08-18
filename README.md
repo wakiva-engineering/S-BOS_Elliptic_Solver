@@ -22,6 +22,8 @@
          \/____/                          ~~                                                \/____/         
 ```
 <!-- Modified from art generated via patorjk.com/software/taag/ -->
+*Software Version: 1.0.0*  
+  
 This code was written by Dr. Akiva Wernick and is provided under the Creative Commons Attribution-NonCommercial 4.0 International License. The code is provided as-is with no warranty or guarantee of performance. The user assumes all responsibility for the use of this code and any consequences that may arise from its use. Please see the LICENSE.md file for the user agreement and terms of use or visit https://creativecommons.org/licenses/by-nc/4.0/ for more information.
 
 # Elliptic Grid Smoothing
@@ -134,8 +136,3 @@ ilut_p_largest_terms: 5
 ilut_threshold: 1e-3  
   
 // STEGER-SORENSON PARAMETERS  
-iterations_ss_turned_off: 10  
-iterations_ss_reduced_influence: 0  
-use_projectiong_for_spacing: True  
-interpolation_damping_coefficient: 0.7  
-sharp_angle_threshold: 90
