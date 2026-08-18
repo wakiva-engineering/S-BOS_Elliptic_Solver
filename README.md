@@ -79,47 +79,47 @@ sharp_angle_threshold (decimal): The threshold in degrees to determine if the an
 
 ### Example User Input File
 #### NACA 2412 Airfoil Example
-// GEOMETRY PARAMETERS
-geometry_name: NACA_2412
-I_boundary_type: 0
-J_boundary_type: 1
-
-// ELLIPTIC SOLVER PARAMETERS
-source_term_generation: 2
-max_smoothing_iterations: 1000
-max_solver_iterations: 1000
-convergence_tolerance: 1e-8
-iterations_with_reduced_stencil: 0
-solver_relaxation: 0.7
-ilut_p_largest_terms: 5
-ilut_threshold: 1e-3
-
-// STEGER-SORENSON PARAMETERS
-iterations_ss_turned_off: 0
-iterations_ss_reduced_influence: 0
-use_projectiong_for_spacing: True
-interpolation_damping_coefficient: 0.7
-sharp_angle_threshold: 90
+// GEOMETRY PARAMETERS  
+geometry_name: NACA_2412  
+I_boundary_type: 0  
+J_boundary_type: 1  
+  
+// ELLIPTIC SOLVER PARAMETERS  
+source_term_generation: 2  
+max_smoothing_iterations: 1000  
+max_solver_iterations: 1000  
+convergence_tolerance: 1e-8  
+iterations_with_reduced_stencil: 0  
+solver_relaxation: 0.7  
+ilut_p_largest_terms: 5  
+ilut_threshold: 1e-3  
+  
+// STEGER-SORENSON PARAMETERS  
+iterations_ss_turned_off: 0  
+iterations_ss_reduced_influence: 0  
+use_projectiong_for_spacing: True  
+interpolation_damping_coefficient: 0.7  
+sharp_angle_threshold: 90  
 
 #### Unit Triangle Example
-// GEOMETRY PARAMETERS
-geometry_name: unit_triangle
-I_boundary_type: 0
-J_boundary_type: 1
-
-// ELLIPTIC SOLVER PARAMETERS
-source_term_generation: 2
-max_smoothing_iterations: 1000
-max_solver_iterations: 1000
-convergence_tolerance: 1e-8
-iterations_with_reduced_stencil: 0
-solver_relaxation: 0.7
-ilut_p_largest_terms: 5
-ilut_threshold: 1e-3
-
-// STEGER-SORENSON PARAMETERS
-iterations_ss_turned_off: 10
-iterations_ss_reduced_influence: 0
-use_projectiong_for_spacing: True
-interpolation_damping_coefficient: 0.7
+// GEOMETRY PARAMETERS  
+geometry_name: unit_triangle  
+I_boundary_type: 0  
+J_boundary_type: 1  
+  
+// ELLIPTIC SOLVER PARAMETERS  
+source_term_generation: 2  
+max_smoothing_iterations: 1000  
+max_solver_iterations: 1000  
+convergence_tolerance: 1e-8  
+iterations_with_reduced_stencil: 0  
+solver_relaxation: 0.7  
+ilut_p_largest_terms: 5  
+ilut_threshold: 1e-3  
+  
+// STEGER-SORENSON PARAMETERS  
+iterations_ss_turned_off: 10  
+iterations_ss_reduced_influence: 0  
+use_projectiong_for_spacing: True  
+interpolation_damping_coefficient: 0.7  
 sharp_angle_threshold: 90
