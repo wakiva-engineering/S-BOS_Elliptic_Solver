@@ -55,27 +55,27 @@ The Steger-Sorenson attempts to preserve the distance between the boundary nodes
 The user input file is a text-based file that must be labeled "elliptic_smoothing.in". Below is the expected format for the user input file. The content below shows the expected parameter name followed by the data type in prentices and then a colon. After the colon is a brief description of the parameter. The data type should be removed from the active user input file, and the variable descriptions should be replaced by the desired value of the variable.
 
 ### User Input File Parameter Definitions
-// GEOMETRY PARAMETERS
-geometry_name (string): The name of the geometry. This will be the expected input name of your custom geometry without the file extension. This will also be the name of the output geometry with the "_smoothed" extension written after the name.
-I_boundary_type (integer): Set this to 0 if the boundaries in the I-direction are fixed. Set this to 1 if the boundaries in the I-direction are periodic. (user custom mesh only)
-J_boundary_type (integer): Set this to 0 if the boundaries in the J-direction are fixed. Set this to 1 if the boundaries in the J-direction are periodic. (user custom mesh only)
-
-// ELLIPTIC SOLVER PARAMETERS
-source_term_generation (integer): Set to 0 for the Thomas-Middlecoff source terms. Set to 1 for the Steger-Sorenson source terms. Set to 2 for the Hybrid source terms. Set to -1 to solve the Laplace equation.
-max_smoothing_iterations (integer): Max number of iterations to run the smoothing algorithm on the meth.
-max_solver_iterations (integer): Max number of iterations to run the system of equations solver on the elliptic equations.
-convergence_tolerance (decimal): The solver residual convergence tolerance
-iterations_with_reduced_stencil (integer): Number of iterations using a reduced 5-point stencil instead of a 7-point stencil to help with the solver convergence.
-solver_relaxation (decimal): Solver relaxation factor for updating the mesh coordinates between smoothing iterations.
-ilut_p_largest_terms (integer): The number of largest terms to accept for the ILUT preconditioner matrix.
-ilut_threshold (decimal): The solver threshold for the ILUT preconditioner matrix.
-
-// STEGER-SORENSON PARAMETERS
-iterations_ss_turned_off (integer): Number of iterations to turn off the Steger-Sorenson source terms.
-iterations_ss_reduced_influence (integer): Number of iterations to reduce the influence of the Steger-Sorenson source terms.
-use_projectiong_for_spacing (True/False): If True, uses the projected distance. If False, uses the distance between the boundary node and its neighboring interior node. See **Steger-Sorenson Distance Calculations** for additional details.
-interpolation_damping_coefficient (decimal): Damping coefficient used for the interpolation of the source terms from the bounbdary to the internal nodes.
-sharp_angle_threshold (decimal): The threshold in degrees to determine if the angle associated with a boundary node is considered sharp.
+// GEOMETRY PARAMETERS  
+***geometry_name (string):*** The name of the geometry. This will be the expected input name of your custom geometry without the file extension. This will also be the name of the output geometry with the "_smoothed" extension written after the name.  
+***I_boundary_type (integer):*** Set this to 0 if the boundaries in the I-direction are fixed. Set this to 1 if the boundaries in the I-direction are periodic.  
+***J_boundary_type (integer):*** Set this to 0 if the boundaries in the J-direction are fixed. Set this to 1 if the boundaries in the J-direction are periodic.  
+  
+// ELLIPTIC SOLVER PARAMETERS  
+***source_term_generation (integer):*** Set to 0 for the Thomas-Middlecoff source terms. Set to 1 for the Steger-Sorenson source terms. Set to 2 for the Hybrid source terms. Set to -1 to solve the Laplace equation.  
+***max_smoothing_iterations (integer):*** Max number of iterations to run the smoothing algorithm on the meth.  
+***max_solver_iterations (integer):*** Max number of iterations to run the system of equations solver on the elliptic equations.  
+***convergence_tolerance (decimal):*** The solver residual convergence tolerance  
+***iterations_with_reduced_stencil (integer):*** Number of iterations using a reduced 5-point stencil instead of a 7-point stencil to help with the solver convergence.  
+***solver_relaxation (decimal):*** Solver relaxation factor for updating the mesh coordinates between smoothing iterations.  
+***ilut_p_largest_terms (integer):*** The number of largest terms to accept for the ILUT preconditioner matrix.  
+***ilut_threshold (decimal):*** The solver threshold for the ILUT preconditioner matrix.  
+  
+// STEGER-SORENSON PARAMETERS  
+***iterations_ss_turned_off (integer):*** Number of iterations to turn off the Steger-Sorenson source terms.  
+***iterations_ss_reduced_influence (integer):*** Number of iterations to reduce the influence of the Steger-Sorenson source terms.  
+***use_projectiong_for_spacing (True/False):*** If True, uses the projected distance. If False, uses the distance between the boundary node and its neighboring interior node. See **Steger-Sorenson Distance Calculations** for additional details.  
+***interpolation_damping_coefficient (decimal):*** Damping coefficient used for the interpolation of the source terms from the bounbdary to the internal nodes.  
+***sharp_angle_threshold (decimal):*** The threshold in degrees to determine if the angle associated with a boundary node is considered sharp.  
 
 ### Example User Input File
 #### NACA 2412 Airfoil Example
