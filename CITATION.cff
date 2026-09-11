@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software in your work or research, please cite it as below."
+authors:
+  - name: "wakiva, LLC"
+    website: "https://www.wakivaengineering.com/"
+    country: "US"
+  - family-names: "Wernick"
+    given-names: "Akiva"
+    orcid: "https://orcid.org/0000-0002-1949-3103"
+title: "S-BOS Elliptic Solver"
+version: "1.0.0"
+date-released: "2026-09-21"
+url: "https://github.com/wakiva-engineering/S-BOS_Elliptic_Solver"
