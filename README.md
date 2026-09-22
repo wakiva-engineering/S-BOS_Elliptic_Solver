@@ -24,7 +24,19 @@
 <!-- Modified from art generated via patorjk.com/software/taag/ -->
 *Software Version: 1.0.0*  
   
-This code was written by Dr. Akiva Wernick and is provided under the PolyForm Noncommercial License 1.0.0. The code is provided as-is with no warranty or guarantee of performance. The user assumes all responsibility for the use of this code and any consequences that may arise from its use. Please see the LICENSE.md file for the user agreement and terms of use or visit https://polyformproject.org/licenses/noncommercial/1.0.0 for more information.
+Copyright 2026 by WAKIVA, LLC and AKIVA WERNICK. ALL RIGHTS RESERVED.
+
+This code was written by Dr. Akiva Wernick and is licensed under the terms of the LICENSE.md file included with this software package. By using this software, you agree to abide by the terms of the license and respect the intellectual property rights of the authors. Failure to comply with the license terms may result in legal consequences. Thank you for respecting the work of the authors and for using this software responsibly. If you have any questions or concerns regarding the license or its terms, please contact the copyright holders for clarification. You may contact the copyright holders through the following website:
+
+&emsp;https://wakivaengineering.com/
+
+THIS SOFTWARE IS NOT TO BE USED FOR COMMERCIAL PURPOSES WITHOUT PRIOR WRITTEN PERMISSION FROM THE AUTHOR(S)!
+
+Required Notice:
+----------------
+Any academic, research, or personal work that utilizes this software and results in a publication must credit the author by citing the following:
+
+&emsp;Wernick, Akiva. (2026). S-BOS Elliptic Solver (Version 1.0.0) [Computer software]. https://github.com/wakiva-engineering/S-BOS_Elliptic_Solver
 
 # Elliptic Grid Smoothing
 The code provided in this package is an Elliptic Grid Smoothing algorithm designed to smooth 2D structured meshes by solving the 2D elliptic equations. A 2D NACA 2412 airfoil and a triangular geometry has been included for testing. The user can also read in their own 2D structured mesh in the standard 2D Plot3D (.xyz) binary file format. The smoothed mesh will then be exported in Plot3D format with the extension "_smoothed" after the geometry name and before the file extension.
