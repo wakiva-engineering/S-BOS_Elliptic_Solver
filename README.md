@@ -36,7 +36,8 @@ Required Notice:
 ----------------
 Any academic, research, or personal work that utilizes this software and results in a publication must credit the author by citing the following:
 
-&emsp;Wernick, Akiva. (2026). S-BOS Elliptic Solver (Version 1.0.0) [Computer software]. https://github.com/wakiva-engineering/S-BOS_Elliptic_Solver
+&emsp;Wernick, Akiva. (2026). S-BOS Elliptic Solver (Version 1.0.0) [Computer software].  
+&emsp;&emsp;https://github.com/wakiva-engineering/S-BOS_Elliptic_Solver
 
 # Elliptic Grid Smoothing
 The code provided in this package is an Elliptic Grid Smoothing algorithm designed to smooth 2D structured meshes by solving the 2D elliptic equations. A 2D NACA 2412 airfoil and a triangular geometry has been included for testing. The user can also read in their own 2D structured mesh in the standard 2D Plot3D (.xyz) binary file format. The smoothed mesh will then be exported in Plot3D format with the extension "_smoothed" after the geometry name and before the file extension.
