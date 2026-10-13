@@ -149,3 +149,8 @@ ilut_p_largest_terms: 5
 ilut_threshold: 1e-3  
   
 // STEGER-SORENSON PARAMETERS  
+iterations_ss_turned_off: 5  
+iterations_ss_reduced_influence: 0  
+use_projectiong_for_spacing: True  
+interpolation_damping_coefficient: 0.7  
+sharp_angle_threshold: 90  
