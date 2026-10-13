@@ -22,7 +22,7 @@
          \/____/                      ~~                                                \/____/         
 ```
 <!-- Modified from art generated via patorjk.com/software/taag/ -->
-*Software Version: 1.0.0*  
+*Software Version: 1.0.1*  
   
 Copyright 2026 by WAKIVA, LLC and AKIVA WERNICK. ALL RIGHTS RESERVED.
 
