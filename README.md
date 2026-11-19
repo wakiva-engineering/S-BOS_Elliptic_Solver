@@ -36,7 +36,7 @@ Required Notice:
 ----------------
 Any academic, research, or personal work that utilizes this software and results in a publication must credit the author by citing the following:
 
-&emsp;Wernick, Akiva. (2026). S-BOS Elliptic Solver (Version 1.0.0) [Computer software].  
+&emsp;Wernick, Akiva. (2026). S-BOS Elliptic Solver (Version 1.0.1) [Computer software].  
 &emsp;&emsp;https://github.com/wakiva-engineering/S-BOS_Elliptic_Solver
 
 # Elliptic Grid Smoothing
@@ -60,7 +60,7 @@ To install the code, simply download the package and extract the contents to the
    - An example input file is provided in the package for reference.
 1. Make sure that the LICENSE.md file is located in the same directory as the executable.
    - If the LICENSE.md file is not present or has been altered, the code will not run and will return an error message.
-   - Please see the LICENSE.md file for the user agreement and terms of use or visit https://creativecommons.org/licenses/by-nc/4.0/ for more information.
+   - Please see the LICENSE.md file for the user agreement and terms of use for more information.
 1. Once the input file is ready, run the following command: ```.\S-BOS_elliptic_solver.exe```
 
 ## Capabilities
